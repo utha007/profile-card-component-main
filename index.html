@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+
 </head>
+
 <body>
+  <div class="ball-background">
+    <img src="images/bg-pattern-top.svg" class="top" >
+    <img src="images/bg-pattern-bottom.svg" class="bottom" >
+  </div>
   <main>
+  
     <div class="background">
+
       <div class="blue-image">
         <img src="images/bg-pattern-card.svg">
-        <section class="profile-pic">
-          <img src="images/image-victor.jpg">
-        </section>
+
       </div>
-      
+      <section class="profile-pic">
+        <img src="images/image-victor.jpg">
+      </section>
+
+
     </div>
     <div class="text">
       <div class="user-name">
-        <h2>Victor Crest</h2> 
-        <p> 26</p>
-        <p>London</p>
-        
+        <div class="details">
+          <h2>Victor Crest</h2>
+          <p> 26</p>
+        </div>
+        <p class="location">London</p>
+
       </div>
       <hr>
-      <div class="socials-details">
-       <p>80K 803K 1.4K</p> 
-       <p>Followers
-     
-       
-        Likes
-      
-        
-        Photos</p>
-       
-        
+      <div class="socials-details numbers">
+        <p class="followers">80K </p>
+        <p class="photos"> 803K </p>
+        <p class="likes"> 1.4K</p>
+
+      </div>
+      <div class="socials-details description">
+        <p class="followers">Followers </p>
+        <p class="followers">Likes </p>
+        <p class="followers">Photos </p>
+
+
       </div>
     </div>
   </main>
 </body>
+
 </html>
